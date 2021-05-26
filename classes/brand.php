@@ -41,7 +41,6 @@
                 $alert = "<span class='error'>Insert Brand Not Success</span> ";
                 return $alert;
               }
-           	 
            }
        }
         public function show_brand(){
@@ -57,7 +56,7 @@
         }
         public function get_product_brand_TOUSLESJOURS(){
            $query = "SELECT * FROM tbl_product WHERE brandId = '13' ORDER BY productId DESC LIMIT 4";
-          $result =  $this->db->select($query);
+           $result =  $this->db->select($query);
           return $result;
         }
         public function get_product_brand_GIVRAL(){
