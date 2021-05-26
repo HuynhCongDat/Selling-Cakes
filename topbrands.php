@@ -21,21 +21,20 @@
 	    	$get_product_brand = $brand->get_product_brand_BRODARDBAKERY();
 	    	if ($get_product_brand) {
 	    		while ($result_product_brand = $get_product_brand->fetch_assoc()) {
-	    			echo $result_product_brand;
 	    	?>
 			<div class="grid_1_of_4 images_1_of_4">
 				<a href="preview-3.php"><img src="admin/uploads/<?php echo $result_product_brand['image']?>" alt="" /></a>
 				<h2><?php echo $result_product_brand['productName']?></h2>
 				<p><?php echo $result_product_brand['product_desc']?></p>
 				<p><span class="price"><?php echo number_format($result_product_brand['price']).''.'VNĐ'?></span></p>
-				<div class="button"><span><a href="details.php?productid=<?php echo $result_product_brand['productId']?>" class="preview">Chi tiết</a></span></div>
+				<div class="button"><span><a href="details.php?productid=<?php echo $result_product_brand['productId']?>" class="preview">Thêm giỏ hàng</a></span></div>
 			</div>
 			<?php    
 	    		}
 	    	}
-			?>
-			
+			?>	
 		</div>
+
 		<div class="content_bottom">
     		<div class="heading">
     		    <h3>TOUS LES JOURS</h3>
@@ -53,7 +52,7 @@
 				<h2><?php echo $result_product_brand['productName']?></h2>
 				<p><?php echo $result_product_brand['product_desc']?></p>
 				<p><span class="price"><?php echo number_format($result_product_brand['price']).''.'VNĐ'?></span></p>
-				<div class="button"><span><a href="details.php?productid=<?php echo $result_product_brand['productId']?>" class="preview">Chi tiết</a></span></div>
+				<div class="button"><span><a href="details.php?productid=<?php echo $result_product_brand['productId']?>" class="preview">Thêm giỏ hàng</a></span></div>
 			</div>
 			<?php    
 	    		}
@@ -77,7 +76,7 @@
 				<h2><?php echo $result_product_brand['productName']?></h2>
 				<p><?php echo $result_product_brand['product_desc']?></p>
 				<p><span class="price"><?php echo number_format($result_product_brand['price']).''.'VNĐ'?></span></p>
-				<div class="button"><span><a href="details.php?productid=<?php echo $result_product_brand['productId']?>" class="preview">Chi tiết</a></span></div>
+				<div class="button"><span><a href="details.php?productid=<?php echo $result_product_brand['productId']?>" class="preview">Thêm giỏ hàng</a></span></div>
 		    </div>
 			<?php    
 	    		}
@@ -101,7 +100,7 @@
 				<h2><?php echo $result_product_brand['productName']?></h2>
 				<p><?php echo $result_product_brand['product_desc']?></p>
 				<p><span class="price"><?php echo number_format($result_product_brand['price']).''.'VNĐ'?></span></p>
-				<div class="button"><span><a href="details.php?productid=<?php echo $result_product_brand['productId']?>" class="preview">Chi tiết</a></span></div>
+				<div class="button"><span><a href="details.php?productid=<?php echo $result_product_brand['productId']?>" class="preview">Thêm giỏ hàng</a></span></div>
 		    </div>
 			<?php    
 	    		}

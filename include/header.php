@@ -65,9 +65,9 @@
 					</div>
 			    </div>
 			    <div class="shopping_cart">
-					<i class="fas fa-shopping-cart"></i>
-					<div class="cart">
-						<a href="cart.php" title="View my shopping cart" rel="nofollow">
+					<a href="cart.php" title="View my shopping cart" rel="nofollow">
+						<i class="fas fa-shopping-cart"></i>
+						<div class="cart">
 							<span class="no_product">
 								<?php
 									$check_cart = $cart->check_cart();
@@ -78,10 +78,10 @@
 									}else {
 										echo '0';
 									}
-							    ?>
+								?>
 							</span>
-						</a>
-					</div>
+						</div>
+					</a>
 			    </div>
 					<?php 
 						if (isset($_GET['customer_id'])) {

@@ -69,7 +69,7 @@
 				 <h2><?php echo $result['productName']?></h2>
 				 <p><?php echo $fm->textShorten($result['product_desc'], 30)?></p>
 				 <p><span class="price"><?php echo number_format($result['price'])." "."VNĐ"?></span></p>
-			     <div class="button"><span><a href="details.php?productid=<?php echo $result['productId']?>" class="details">Chi tiết</a></span></div>
+			     <div class="button"><span><a href="details.php?productid=<?php echo $result['productId']?>" class="details">Thêm giỏ hàng</a></span></div>
 			</div>
 		<?php
           }
